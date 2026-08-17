@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ArtifactCandidate",
+  "type": "object",
+  "required": [
+    "candidate_id",
+    "source_url",
+    "source_type",
+    "title",
+    "discovered_at",
+    "entity_target",
+    "relevance_score",
+    "verification_status"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^cand-[a-z0-9-]+$"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "OFFICIAL_SHIPYARD",
+        "OFFICIAL_AUTHORITY",
+        "OPERATOR_TECHNICAL",
+        "DECK_OFFICER_LOG",
+        "MARITIME_REGISTRY"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "discovered_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "entity_target": {
+      "type": "object",
+      "required": ["entity_type", "slug"],
+      "properties": {
+        "entity_type": {
+          "type": "string",
+          "enum": ["ship", "ship_class", "port", "terminal", "stateroom"]
+        },
+        "slug": {
+          "type": "string"
+        }
+      }
+    },
+    "relevance_score": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["PENDING", "VERIFIED", "REJECTED"]
+    },
+    "extracted_metadata": {
+      "type": "object",
+      "properties": {
+        "file_format": { "type": "string" },
+        "content_hash": { "type": "string" },
+        "authoritative_publisher": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IngestedArtifact",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "candidate_id",
+    "storage_path",
+    "mime_type",
+    "sha256",
+    "source_url",
+    "provenance",
+    "ingested_at"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^art-[a-z0-9-]+$"
+    },
+    "candidate_id": {
+      "type": "string",
+      "pattern": "^cand-[a-z0-9-]+$"
+    },
+    "storage_path": {
+      "type": "string"
+    },
+    "mime_type": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source_type", "authority", "trust_level"],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "OFFICIAL_SHIPYARD",
+            "OFFICIAL_AUTHORITY",
+            "OPERATOR_TECHNICAL",
+            "DECK_OFFICER_LOG",
+            "MARITIME_REGISTRY"
+          ]
+        },
+        "authority": { "type": "string" },
+        "trust_level": {
+          "type": "string",
+          "enum": ["OFFICIAL", "VERIFIED", "COMMUNITY"]
+        }
+      }
+    },
+    "ingested_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "parsed_sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["section_name", "page_number"],
+        "properties": {
+          "section_name": { "type": "string" },
+          "page_number": { "type": "integer", "minimum": 1 },
+          "extracted_entities": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

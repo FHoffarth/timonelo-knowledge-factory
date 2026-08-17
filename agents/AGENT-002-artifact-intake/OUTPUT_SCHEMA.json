@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent002Output",
+  "type": "object",
+  "required": ["artifact", "status"],
+  "properties": {
+    "artifact": {
+      "$ref": "../../schemas/artifact.schema.json"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["INGESTED_NEW", "UPDATED_EXISTING", "REJECTED_CORRUPT"]
+    }
+  },
+  "additionalProperties": false
+}

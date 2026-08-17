@@ -1,0 +1,40 @@
+[
+  {
+    "candidate_id": "cand-bellissima-ga-2019",
+    "source_url": "https://chantiers-atlantique.com/dossiers/msc-bellissima-ga.pdf",
+    "source_type": "OFFICIAL_SHIPYARD",
+    "title": "MSC Bellissima General Arrangement Plan (Delivery 2019)",
+    "discovered_at": "2026-08-17T12:00:00Z",
+    "entity_target": {
+      "entity_type": "ship",
+      "slug": "msc-bellissima"
+    },
+    "relevance_score": 0.98,
+    "verification_status": "VERIFIED",
+    "extracted_metadata": {
+      "file_format": "PDF",
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "authoritative_publisher": "Chantiers de l'Atlantique",
+      "notes": "Verified Deck 14 Balcony Cabin 14122 dimensions and elevator access routes."
+    }
+  },
+  {
+    "candidate_id": "cand-genoa-ponte-mille-2026",
+    "source_url": "https://www.porto.genova.it/berths/ponte-dei-mille-schedule.json",
+    "source_type": "OFFICIAL_AUTHORITY",
+    "title": "Port of Genoa Ponte dei Mille Berth Allocation & Gangway Deck Schedule",
+    "discovered_at": "2026-08-17T12:30:00Z",
+    "entity_target": {
+      "entity_type": "port",
+      "slug": "genoa"
+    },
+    "relevance_score": 0.94,
+    "verification_status": "VERIFIED",
+    "extracted_metadata": {
+      "file_format": "JSON",
+      "content_hash": "8f434346648f6b96df89dda901c5176b10a6d83961dd3c1ac88b59b2dc327aa4",
+      "authoritative_publisher": "Autorità di Sistema Portuale del Mar Ligure Occidentale",
+      "notes": "Verified Gangway Deck 5 level access to Terminal Ovest."
+    }
+  }
+]

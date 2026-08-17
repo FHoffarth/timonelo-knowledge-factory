@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent001Output",
+  "type": "object",
+  "required": ["candidates", "scan_summary"],
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "../../schemas/artifact-candidate.schema.json"
+      }
+    },
+    "scan_summary": {
+      "type": "object",
+      "required": ["total_scanned", "candidates_found", "rejected_promotional"],
+      "properties": {
+        "total_scanned": { "type": "integer", "minimum": 0 },
+        "candidates_found": { "type": "integer", "minimum": 0 },
+        "rejected_promotional": { "type": "integer", "minimum": 0 },
+        "primary_domain": { "type": "string" }
+      }
+    }
+  },
+  "additionalProperties": false
+}
