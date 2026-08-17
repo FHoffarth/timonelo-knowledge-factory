@@ -1,0 +1,65 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    name: Pre-release Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install jsonschema==4.23.0 ruff==0.5.7
+
+      - name: Run test suite
+        run: python -m unittest discover -s tests -v
+
+      - name: Validate schemas
+        run: python scripts/validate_schemas.py
+
+      - name: Validate examples
+        run: python scripts/validate_examples.py
+
+      - name: Lint
+        run: ruff check src/ tests/ scripts/
+
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    needs: validate
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract version from tag
+        id: version
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.VERSION }}
+          name: "Timonelo Knowledge Factory ${{ steps.version.outputs.VERSION }}"
+          body: |
+            ## Timonelo Knowledge Factory ${{ steps.version.outputs.VERSION }}
+
+            See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
+
+            **All CI checks passed** before this release was created.
+          draft: false
+          prerelease: false
