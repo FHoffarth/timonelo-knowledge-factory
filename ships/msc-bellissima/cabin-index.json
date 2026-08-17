@@ -1,0 +1,22 @@
+{
+  "_note": "Lookup index. Keys are cabin numbers as strings. Values describe what profile coverage exists.",
+  "14122": {
+    "profile": "cabins/14122.json",
+    "review_state": "PARTIAL",
+    "statement_count": 4,
+    "deck": 14
+  },
+  "15666": {
+    "profile": "cabins/15666.json",
+    "review_state": "PARTIAL",
+    "statement_count": 1,
+    "deck": 15
+  },
+  "20215": {
+    "profile": "cabins/20215.json",
+    "review_state": "UNKNOWN",
+    "statement_count": 0,
+    "deck": null,
+    "reason": "Deck 20 does not exist on MSC Bellissima."
+  }
+}

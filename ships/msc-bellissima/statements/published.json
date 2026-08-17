@@ -1,0 +1,139 @@
+[
+  {
+    "statement_id": "stmt-bellissima-total-decks",
+    "subject_slug": "msc-bellissima",
+    "predicate": "total_passenger_decks",
+    "object_value": 19,
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 1.0,
+    "is_inherited": false,
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck elevation profile — passenger deck enumeration"
+    }
+  },
+  {
+    "statement_id": "stmt-bellissima-deck-14-class",
+    "subject_slug": "msc-bellissima/deck-14",
+    "predicate": "deck_class",
+    "object_value": "Residential — Balcony Staterooms",
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 0.97,
+    "is_inherited": false,
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 plan view — residential zone classification"
+    }
+  },
+  {
+    "statement_id": "stmt-bellissima-deck-15-class",
+    "subject_slug": "msc-bellissima/deck-15",
+    "predicate": "deck_class",
+    "object_value": "Residential — Balcony Staterooms",
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 0.97,
+    "is_inherited": false,
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 15 plan view — residential zone classification"
+    }
+  },
+  {
+    "statement_id": "stmt-bellissima-cabin-14122-deck",
+    "subject_slug": "msc-bellissima/cabin-14122",
+    "predicate": "deck",
+    "object_value": 14,
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 1.0,
+    "is_inherited": false,
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 residential plan — cabin 14122 polygon boundary"
+    }
+  },
+  {
+    "statement_id": "stmt-bellissima-cabin-14122-has-balcony",
+    "subject_slug": "msc-bellissima/cabin-14122",
+    "predicate": "has_balcony",
+    "object_value": true,
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 0.97,
+    "is_inherited": false,
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 residential plan — balcony zone geometry adjacent to cabin 14122"
+    }
+  },
+  {
+    "statement_id": "stmt-bellissima-cabin-14122-category",
+    "subject_slug": "msc-bellissima/cabin-14122",
+    "predicate": "cabin_category",
+    "object_value": "Balcony",
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 0.97,
+    "is_inherited": true,
+    "inheritance_reference": "stmt-bellissima-deck-14-class",
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 zone classification — inherited to cabin 14122",
+      "inheritance_note": "Category derived from deck-level zone classification. Cabin-specific category confirmation requires cabin specification sheet."
+    }
+  },
+  {
+    "statement_id": "stmt-bellissima-cabin-14122-elevator-distance",
+    "subject_slug": "msc-bellissima/cabin-14122",
+    "predicate": "midship_elevator_distance_m",
+    "object_value": 12,
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 0.95,
+    "is_inherited": false,
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 residential plan — measured vector distance from cabin 14122 door to Midship Panoramic Lift lobby"
+    }
+  },
+  {
+    "statement_id": "stmt-bellissima-deck-20-does-not-exist",
+    "subject_slug": "msc-bellissima",
+    "predicate": "deck_20_exists",
+    "object_value": false,
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 1.0,
+    "is_inherited": false,
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck elevation profile — highest passenger deck confirmed as Deck 19"
+    }
+  },
+  {
+    "statement_id": "stmt-bellissima-embarkation-deck",
+    "subject_slug": "msc-bellissima",
+    "predicate": "primary_embarkation_deck",
+    "object_value": 5,
+    "source_artifact_id": "art-bellissima-ga-2019",
+    "confidence": 0.99,
+    "is_inherited": false,
+    "created_at": "2026-08-17T18:42:00Z",
+    "provenance": {
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 5 plan view — gangway and embarkation lobby annotation"
+    }
+  }
+]

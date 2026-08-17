@@ -1,0 +1,488 @@
+# ==============================================================================
+# MSC Bellissima - Venues Register
+# Every venue with deck location, category classification, and evidence provenance
+# ==============================================================================
+
+venues:
+  - name: "Infinity Reception & Guest Services"
+    deck: 5
+    deck_name: "Corallo"
+    category: "PROMENADE_ATRIUM"
+    capacity: 120
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 5 General Arrangement Plan"
+      locator: "Central Atrium Midship Lobby (Frame 110-130)"
+
+  - name: "Infinity Atrium & Swarovski Stairs (Deck 5)"
+    deck: 5
+    deck_name: "Corallo"
+    category: "PROMENADE_ATRIUM"
+    capacity: 250
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 5 General Arrangement Plan"
+      locator: "Midship Atrium Void & Grand Twin Staircases"
+
+  - name: "Infinity Bar"
+    deck: 5
+    deck_name: "Corallo"
+    category: "BAR_LOUNGE"
+    capacity: 90
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 5 General Arrangement Plan"
+      locator: "Atrium Lobby Port Side"
+
+  - name: "Medical Centre"
+    deck: 5
+    deck_name: "Corallo"
+    category: "SERVICE_PANTRY"
+    capacity: 40
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 5 General Arrangement Plan"
+      locator: "Aft Corridor Access Zone (Frame 60-80)"
+
+  - name: "MSC Shore Excursions Desk"
+    deck: 5
+    deck_name: "Corallo"
+    category: "PROMENADE_ATRIUM"
+    capacity: 50
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 5 General Arrangement Plan"
+      locator: "Starboard Reception Lobby"
+
+  - name: "Business Centre & Conference Rooms"
+    deck: 5
+    deck_name: "Corallo"
+    category: "SERVICE_PANTRY"
+    capacity: 80
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 5 General Arrangement Plan"
+      locator: "Forward Starboard Zone"
+
+  - name: "Galleria Bellissima (80m LED Dome Promenade)"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "PROMENADE_ATRIUM"
+    capacity: 800
+    is_noise_generator: true
+    step_free_access: true
+    signature_feature: "80-meter curved LED Sky Screen dome, Swarovski crystal staircase"
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 General Arrangement Plan"
+      locator: "Central Spine Promenade (Frame 90-180)"
+
+  - name: "London Theatre (Lower Level)"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "THEATER"
+    capacity: 975
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 General Arrangement Plan"
+      locator: "Forward Main Show Lounge (Frame 190-240)"
+
+  - name: "Il Ciliegio & Le Cerisier Restaurant"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "DINING"
+    capacity: 650
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 General Arrangement Plan"
+      locator: "Aft Main Dining Room (Frame 20-60)"
+
+  - name: "Masters of the Sea British Pub"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "BAR_LOUNGE"
+    capacity: 140
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 General Arrangement Plan"
+      locator: "Promenade Mid-Aft Starboard"
+
+  - name: "Jean-Philippe Maury Chocolat & Cafe"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "BAR_LOUNGE"
+    capacity: 85
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 General Arrangement Plan"
+      locator: "Promenade Mid-Aft Port"
+
+  - name: "TV Studio & Comedy Bar"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "BAR_LOUNGE"
+    capacity: 101
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 General Arrangement Plan"
+      locator: "Promenade Forward-Mid (Frame 150-170)"
+
+  - name: "Emergency Muster Station A (Forward)"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "SERVICE_PANTRY"
+    capacity: 600
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 Safety & Life Saving Appliance Plan"
+      locator: "Forward Theatre Access Lobby"
+
+  - name: "Emergency Muster Station B (Promenade)"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "SERVICE_PANTRY"
+    capacity: 800
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 Safety & Life Saving Appliance Plan"
+      locator: "Galleria Bellissima Central Spine"
+
+  - name: "Emergency Muster Station C (Aft)"
+    deck: 6
+    deck_name: "Posidonia"
+    category: "SERVICE_PANTRY"
+    capacity: 650
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 6 Safety & Life Saving Appliance Plan"
+      locator: "Aft Restaurant Lobby"
+
+  - name: "Carousel Lounge (Aft Show Theatre)"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "THEATER"
+    capacity: 400
+    is_noise_generator: true
+    step_free_access: true
+    signature_feature: "360-degree rotating stage, panoramic aft sea-view glass wall"
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 General Arrangement Plan"
+      locator: "Extreme Aft Multi-Level Show Lounge (Frame 10-40)"
+
+  - name: "Casino Imperiale"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "BAR_LOUNGE"
+    capacity: 350
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 General Arrangement Plan"
+      locator: "Midship Gaming Floor (Frame 80-120)"
+
+  - name: "Champagne Bar & Grand Staircase"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "BAR_LOUNGE"
+    capacity: 110
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 General Arrangement Plan"
+      locator: "Atrium Upper Level Overlook"
+
+  - name: "Butcher's Cut Steakhouse"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "DINING"
+    capacity: 120
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 General Arrangement Plan"
+      locator: "Promenade Upper Overlook Starboard (Frame 140-160)"
+
+  - name: "Kaito Teppanyaki & Sushi Bar"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "DINING"
+    capacity: 90
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 General Arrangement Plan"
+      locator: "Promenade Upper Overlook Port (Frame 140-160)"
+
+  - name: "HOLA! Tapas Bar by Ramon Freixa"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "DINING"
+    capacity: 64
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 General Arrangement Plan"
+      locator: "Promenade Upper Overlook Starboard (Frame 160-175)"
+
+  - name: "London Theatre (Balcony Level)"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "THEATER"
+    capacity: 350
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 General Arrangement Plan"
+      locator: "Forward Theatre Tier 2 (Frame 190-230)"
+
+  - name: "Emergency Muster Station D (Forward Port)"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "SERVICE_PANTRY"
+    capacity: 500
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 Safety & Life Saving Appliance Plan"
+      locator: "Forward Port Corridor (Frame 180-210)"
+
+  - name: "Emergency Muster Station E (Mid Port)"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "SERVICE_PANTRY"
+    capacity: 550
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 Safety & Life Saving Appliance Plan"
+      locator: "Midship Casino Lobby Port"
+
+  - name: "Emergency Muster Station F (Aft Port)"
+    deck: 7
+    deck_name: "Mirabilis"
+    category: "SERVICE_PANTRY"
+    capacity: 400
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 7 Safety & Life Saving Appliance Plan"
+      locator: "Aft Carousel Lounge Access Corridor"
+
+  - name: "Marketplace Buffet (Forward & Mid)"
+    deck: 15
+    deck_name: "Rododendro"
+    category: "BUFFET"
+    capacity: 1345
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 15 General Arrangement Plan"
+      locator: "Aft-Midship Lido Dining Zone (Frame 40-100)"
+
+  - name: "Grand Canyon Covered Pool (Solarium)"
+    deck: 15
+    deck_name: "Rododendro"
+    category: "POOL_SOLARIUM"
+    capacity: 220
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 15 General Arrangement Plan"
+      locator: "Midship Retractable Glass Roof Solarium (Frame 110-140)"
+
+  - name: "Atmosphere Pool & Main Sun Deck"
+    deck: 15
+    deck_name: "Rododendro"
+    category: "POOL_SOLARIUM"
+    capacity: 850
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 15 General Arrangement Plan"
+      locator: "Forward-Midship Open Lido Pool (Frame 140-190)"
+
+  - name: "MSC Yacht Club Top Sail Lounge (Deck 15)"
+    deck: 15
+    deck_name: "Rododendro"
+    category: "BAR_LOUNGE"
+    capacity: 140
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 15 General Arrangement Plan"
+      locator: "Forward Yacht Club Enclave (Frame 200-240)"
+
+  - name: "Marketplace Buffet (Aft Terrace & Pizzeria)"
+    deck: 16
+    deck_name: "Orchidea"
+    category: "BUFFET"
+    capacity: 350
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 16 General Arrangement Plan"
+      locator: "Aft Open Terrace (Frame 20-50)"
+
+  - name: "MSC Gym by Technogym"
+    deck: 16
+    deck_name: "Orchidea"
+    category: "SPA_FITNESS"
+    capacity: 90
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 16 General Arrangement Plan"
+      locator: "Mid-Aft Panoramic Fitness Center (Frame 50-70)"
+
+  - name: "Sportplex Arena & F1 Simulator"
+    deck: 16
+    deck_name: "Orchidea"
+    category: "SPA_FITNESS"
+    capacity: 180
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 16 General Arrangement Plan"
+      locator: "Midship Multi-Sport Arena (Frame 80-120)"
+
+  - name: "MSC Aurea Spa & Thermal Suite"
+    deck: 16
+    deck_name: "Orchidea"
+    category: "SPA_FITNESS"
+    capacity: 150
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 16 General Arrangement Plan"
+      locator: "Forward Spa Complex (Frame 190-230)"
+
+  - name: "MSC Yacht Club Restaurant"
+    deck: 16
+    deck_name: "Orchidea"
+    category: "DINING"
+    capacity: 120
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 16 General Arrangement Plan"
+      locator: "Forward Yacht Club Enclave (Frame 210-240)"
+
+  - name: "Horizon Amphitheatre & Sunset Bar"
+    deck: 18
+    deck_name: "Ninfea"
+    category: "BAR_LOUNGE"
+    capacity: 320
+    is_noise_generator: true
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 18 General Arrangement Plan"
+      locator: "Aft Multi-Tiered Open Deck Amphitheatre (Frame 10-40)"
+
+  - name: "DOREMI Studio & Junior Club (LEGO / Chicco)"
+    deck: 18
+    deck_name: "Ninfea"
+    category: "YOUTH_KIDS"
+    capacity: 160
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 18 General Arrangement Plan"
+      locator: "Mid-Aft Youth Center (Frame 40-70)"
+
+  - name: "Arizona Aquapark & Himalayan Bridge (82m above sea)"
+    deck: 18
+    deck_name: "Ninfea"
+    category: "POOL_SOLARIUM"
+    capacity: 350
+    is_noise_generator: true
+    step_free_access: true
+    signature_feature: "3 twisting water slides, suspension rope bridge"
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 18 General Arrangement Plan"
+      locator: "Midship Fun Park & Waterslides (Frame 80-140)"
+
+  - name: "MSC Yacht Club Top Sail Lounge (Deck 18)"
+    deck: 18
+    deck_name: "Ninfea"
+    category: "BAR_LOUNGE"
+    capacity: 110
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 18 General Arrangement Plan"
+      locator: "Forward Yacht Club Observation Lounge (Frame 200-240)"
+
+  - name: "Top Deck Solarium & The One Pool"
+    deck: 19
+    deck_name: "Magnolia"
+    category: "POOL_SOLARIUM"
+    capacity: 140
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 19 General Arrangement Plan"
+      locator: "Forward Exclusive Yacht Club Pool Deck (Frame 180-230)"
+
+  - name: "The One Grill & Bar (Yacht Club Exclusive)"
+    deck: 19
+    deck_name: "Magnolia"
+    category: "DINING"
+    capacity: 80
+    is_noise_generator: false
+    step_free_access: true
+    evidence:
+      artifact: "art-bellissima-ga-2019"
+      page: "Deck 19 General Arrangement Plan"
+      locator: "Forward Starboard Sun Deck Dining (Frame 200-220)"

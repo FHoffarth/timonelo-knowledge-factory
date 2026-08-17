@@ -1,0 +1,29 @@
+{
+  "cabin_number": "20215",
+  "deck": "UNKNOWN",
+  "deck_name": "UNKNOWN",
+  "cabin_category": "UNKNOWN",
+  "has_balcony": "UNKNOWN",
+  "accessible": "UNKNOWN",
+  "connecting_cabin": "UNKNOWN",
+  "additional_beds": "UNKNOWN",
+  "location_side": "UNKNOWN",
+  "square_metres": "UNKNOWN",
+  "midship_elevator_distance_m": "UNKNOWN",
+  "review_state": "UNKNOWN",
+  "review_note": "Cabin 20215 cannot exist on MSC Bellissima. The vessel has 19 passenger decks (stmt-bellissima-total-decks). Deck 20 does not exist (stmt-bellissima-deck-20-does-not-exist). A cabin with prefix '20' references a non-existent deck. No evidence, no profile is possible.",
+  "statement_ids": [
+    "stmt-bellissima-total-decks",
+    "stmt-bellissima-deck-20-does-not-exist"
+  ],
+  "evidence": [
+    {
+      "field": "review_state",
+      "statement_id": "stmt-bellissima-deck-20-does-not-exist",
+      "artifact_id": "art-bellissima-ga-2019",
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck elevation profile — highest passenger deck confirmed as Deck 19"
+    }
+  ]
+}

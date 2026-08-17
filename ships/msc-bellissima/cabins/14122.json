@@ -1,0 +1,57 @@
+{
+  "cabin_number": "14122",
+  "deck": 14,
+  "deck_name": "UNKNOWN",
+  "cabin_category": "Balcony",
+  "has_balcony": true,
+  "accessible": "UNKNOWN",
+  "connecting_cabin": "UNKNOWN",
+  "additional_beds": "UNKNOWN",
+  "location_side": "UNKNOWN",
+  "square_metres": "UNKNOWN",
+  "midship_elevator_distance_m": 12,
+  "review_state": "PARTIAL",
+  "review_note": "Deck-level and elevator routing confirmed from GA plan. Cabin-specific accessibility, connecting status, bed configuration, and deck name require Cabin Specification Sheet and Accessibility Guide — not yet ingested.",
+  "statement_ids": [
+    "stmt-bellissima-cabin-14122-deck",
+    "stmt-bellissima-cabin-14122-has-balcony",
+    "stmt-bellissima-cabin-14122-category",
+    "stmt-bellissima-cabin-14122-elevator-distance"
+  ],
+  "evidence": [
+    {
+      "field": "deck",
+      "statement_id": "stmt-bellissima-cabin-14122-deck",
+      "artifact_id": "art-bellissima-ga-2019",
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 residential plan — cabin 14122 polygon boundary"
+    },
+    {
+      "field": "has_balcony",
+      "statement_id": "stmt-bellissima-cabin-14122-has-balcony",
+      "artifact_id": "art-bellissima-ga-2019",
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 residential plan — balcony zone geometry adjacent to cabin 14122"
+    },
+    {
+      "field": "cabin_category",
+      "statement_id": "stmt-bellissima-cabin-14122-category",
+      "artifact_id": "art-bellissima-ga-2019",
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 zone classification — inherited to cabin 14122",
+      "is_inherited": true,
+      "inheritance_from": "stmt-bellissima-deck-14-class"
+    },
+    {
+      "field": "midship_elevator_distance_m",
+      "statement_id": "stmt-bellissima-cabin-14122-elevator-distance",
+      "artifact_id": "art-bellissima-ga-2019",
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 14 residential plan — measured vector distance from cabin 14122 door to Midship Panoramic Lift lobby"
+    }
+  ]
+}

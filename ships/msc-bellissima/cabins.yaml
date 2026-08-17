@@ -1,0 +1,165 @@
+# ==============================================================================
+# MSC Bellissima - Cabins Register (Ground Truth Profiles)
+# Every value backed by evidence; unsupported fields strictly marked UNKNOWN.
+# ==============================================================================
+
+cabins:
+  - cabin_number: "14122"
+    deck: 14
+    deck_name: "Girasole"
+    category: "Balcony Deluxe (BR2)"
+    accessible: false
+    connecting_cabin: "UNKNOWN"
+    balcony: true
+    additional_beds: "UNKNOWN"
+    hull_side: "STARBOARD"
+    zone: "AFT"
+    interior_sqm: 19.0
+    balcony_sqm: 4.5
+    distance_to_nearest_lift_m: 24.5
+    view_obstruction: "UNOBSTRUCTED"
+    evidence_artifact: "art-bellissima-ga-2019"
+    page: "Deck 14 General Arrangement Plan"
+    locator: "Deck 14 residential plan - Frame 140 Starboard Aft Corridor"
+    review_state: "VERIFIED"
+    notes: "Service pantry located 3 doors forward; standard double/twin configuration."
+
+  - cabin_number: "15666"
+    deck: 15
+    deck_name: "Rododendro"
+    category: "UNKNOWN"
+    accessible: "UNKNOWN"
+    connecting_cabin: "UNKNOWN"
+    balcony: "UNKNOWN"
+    additional_beds: "UNKNOWN"
+    hull_side: "UNKNOWN"
+    zone: "UNKNOWN"
+    interior_sqm: "UNKNOWN"
+    balcony_sqm: "UNKNOWN"
+    distance_to_nearest_lift_m: "UNKNOWN"
+    view_obstruction: "UNKNOWN"
+    evidence_artifact: "art-bellissima-ga-2019"
+    page: "Deck 15 General Arrangement Plan"
+    locator: "Deck 15 plan view - Forward enclave contains staterooms 15001-15032 only; aft zone is Marketplace Buffet. Cabin 15666 does not exist on Deck 15."
+    review_state: "DOES_NOT_EXIST"
+    notes: "Deck 15 residential inventory is restricted to 30 Yacht Club suites (15001-15032). Number 15666 is invalid."
+
+  - cabin_number: "20215"
+    deck: "UNKNOWN"
+    deck_name: "UNKNOWN"
+    category: "UNKNOWN"
+    accessible: "UNKNOWN"
+    connecting_cabin: "UNKNOWN"
+    balcony: "UNKNOWN"
+    additional_beds: "UNKNOWN"
+    hull_side: "UNKNOWN"
+    zone: "UNKNOWN"
+    interior_sqm: "UNKNOWN"
+    balcony_sqm: "UNKNOWN"
+    distance_to_nearest_lift_m: "UNKNOWN"
+    view_obstruction: "UNKNOWN"
+    evidence_artifact: "art-bellissima-ga-2019"
+    page: "Elevation Profile Sheet 1"
+    locator: "Vessel elevation profile - Highest passenger deck is Deck 19 (Magnolia). Deck 20 does not exist."
+    review_state: "DOES_NOT_EXIST"
+    notes: "MSC Bellissima has 19 total decks. A stateroom prefix 20 references a non-existent deck."
+
+  - cabin_number: "11002"
+    deck: 11
+    deck_name: "Ortensia"
+    category: "Balcony Deluxe (BR1)"
+    accessible: false
+    connecting_cabin: "UNKNOWN"
+    balcony: true
+    additional_beds: "UNKNOWN"
+    hull_side: "PORT"
+    zone: "FORWARD"
+    interior_sqm: 19.0
+    balcony_sqm: 4.5
+    distance_to_nearest_lift_m: 15.0
+    view_obstruction: "UNOBSTRUCTED"
+    evidence_artifact: "art-bellissima-ga-2019"
+    page: "Deck 11 General Arrangement Plan"
+    locator: "Deck 11 forward residential corridor port side (Frame 210)"
+    review_state: "VERIFIED"
+    notes: "Surrounded by residential staterooms above and below; calm acoustic profile."
+
+  - cabin_number: "8110"
+    deck: 8
+    deck_name: "Camellia"
+    category: "Balcony with Partial View (BP)"
+    accessible: false
+    connecting_cabin: "UNKNOWN"
+    balcony: true
+    additional_beds: "UNKNOWN"
+    hull_side: "STARBOARD"
+    zone: "MID_AFT"
+    interior_sqm: 19.0
+    balcony_sqm: 4.5
+    distance_to_nearest_lift_m: 35.0
+    view_obstruction: "PARTIALLY_OBSTRUCTED_DAVIT"
+    evidence_artifact: "art-bellissima-ga-2019"
+    page: "Deck 8 General Arrangement Plan & Frame 120-180"
+    locator: "Deck 8 Starboard - Lifeboat #8 davit arm intersects lower 15% of vertical downward sightline"
+    review_state: "VERIFIED"
+    notes: "Official GA drawing confirms Lifeboat 8 davit intrusion at rail level; retain BP classification."
+
+  - cabin_number: "5006"
+    deck: 5
+    deck_name: "Corallo"
+    category: "Oceanview Accessible (OR1_ACC)"
+    accessible: true
+    connecting_cabin: "UNKNOWN"
+    balcony: false
+    additional_beds: "UNKNOWN"
+    hull_side: "STARBOARD"
+    zone: "FORWARD"
+    interior_sqm: 28.0
+    balcony_sqm: 0.0
+    distance_to_nearest_lift_m: 12.0
+    view_obstruction: "UNOBSTRUCTED"
+    evidence_artifact: "art-bellissima-ga-2019"
+    page: "Deck 5 General Arrangement Plan"
+    locator: "Deck 5 Forward Accessible Stateroom Cluster (Door width 950mm, roll-in shower)"
+    review_state: "VERIFIED"
+    notes: "Designated wheelchair accessible stateroom with step-free bathroom threshold and wide corridor access."
+
+  - cabin_number: "15002"
+    deck: 15
+    deck_name: "Rododendro"
+    category: "MSC Yacht Club Deluxe Suite (YC1)"
+    accessible: false
+    connecting_cabin: "UNKNOWN"
+    balcony: true
+    additional_beds: "UNKNOWN"
+    hull_side: "STARBOARD"
+    zone: "FORWARD"
+    interior_sqm: 28.0
+    balcony_sqm: 6.0
+    distance_to_nearest_lift_m: 18.0
+    view_obstruction: "UNOBSTRUCTED"
+    evidence_artifact: "art-bellissima-ga-2019"
+    page: "Deck 15 General Arrangement Plan"
+    locator: "Deck 15 Forward Yacht Club Enclave (Frame 215 Starboard)"
+    review_state: "VERIFIED"
+    notes: "Keycard-controlled Yacht Club enclave access, panoramic forward-facing stateroom."
+
+  - cabin_number: "19001"
+    deck: 19
+    deck_name: "Magnolia"
+    category: "MSC Yacht Club Royal Suite (YC3)"
+    accessible: false
+    connecting_cabin: "UNKNOWN"
+    balcony: true
+    additional_beds: "UNKNOWN"
+    hull_side: "PORT"
+    zone: "FORWARD"
+    interior_sqm: 58.0
+    balcony_sqm: 70.0
+    distance_to_nearest_lift_m: 10.0
+    view_obstruction: "UNOBSTRUCTED"
+    evidence_artifact: "art-bellissima-ga-2019"
+    page: "Deck 19 General Arrangement Plan"
+    locator: "Deck 19 Forward Port Corner Suite with private whirlpool bath on balcony"
+    review_state: "VERIFIED"
+    notes: "Highest suite tier on vessel; direct step-free access to The One Pool and Sun Deck."

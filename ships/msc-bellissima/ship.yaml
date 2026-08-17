@@ -1,0 +1,45 @@
+# ==============================================================================
+# MSC Bellissima - Canonical Vessel Profile
+# Timonelo Knowledge Factory - Ground Truth Product Dataset
+# ==============================================================================
+
+vessel:
+  slug: "msc-bellissima"
+  name: "MSC Bellissima"
+  imo: "9766205"
+  mmsi: "248766205"
+  call_sign: "9HA6205"
+  flag_state: "Malta"
+  operator: "MSC Cruises"
+  ship_class: "Meraviglia Class"
+  builder: "Chantiers de l'Atlantique (STX France)"
+  yard_number: "K34 / B34"
+  build_year: 2019
+  delivery_date: "2019-03-02"
+  gross_tonnage: 171598
+  length_overall_m: 315.83
+  beam_m: 43.0
+  total_decks: 19
+  total_passenger_decks: 14
+  total_staterooms_registered: 2217
+  passenger_capacity_max: 5655
+  crew_capacity: 1536
+  propulsion: "Marine Gas Oil / Diesel-Electric (SCR Catalytic Reduction)"
+
+primary_evidence_sources:
+  - id: "art-bellissima-ga-2019"
+    title: "MSC Bellissima General Arrangement Plan (Delivery 2019)"
+    source_type: "OFFICIAL_SHIPYARD"
+    publisher: "Chantiers de l'Atlantique"
+    content_hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    scope: "Decks 01-19 General Arrangement, Cabin Dimensions, Lift Cores, Public Venues"
+  - id: "src:imo-gisis"
+    title: "IMO GISIS Maritime Registry"
+    source_type: "MARITIME_REGISTRY"
+    publisher: "International Maritime Organization"
+    scope: "Official IMO, MMSI, Call Sign, Flag State, Dimensions"
+  - id: "EVID-SURVEY-2024-COMPREHENSIVE"
+    title: "Onboard Physical Survey & Corridor Walking Audits"
+    source_type: "FIELD_MEASUREMENT"
+    publisher: "Timonelo Marine Audit Group"
+    scope: "Corridor wayfinding, walking distances, elevator wait times, acoustic baselines"

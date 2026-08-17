@@ -1,0 +1,29 @@
+{
+  "cabin_number": "15666",
+  "deck": 15,
+  "deck_name": "UNKNOWN",
+  "cabin_category": "UNKNOWN",
+  "has_balcony": "UNKNOWN",
+  "accessible": "UNKNOWN",
+  "connecting_cabin": "UNKNOWN",
+  "additional_beds": "UNKNOWN",
+  "location_side": "UNKNOWN",
+  "square_metres": "UNKNOWN",
+  "midship_elevator_distance_m": "UNKNOWN",
+  "review_state": "PARTIAL",
+  "review_note": "Deck 15 exists and is a residential deck (confirmed from GA plan). Cabin 15666 specifically has not been individually scanned in any ingested artifact. Deck-level classification for deck 15 is available but has not yet been extended to this cabin. No cabin-level statement exists for 15666. All cabin-specific fields are UNKNOWN pending Cabin Specification Sheet ingestion.",
+  "statement_ids": [
+    "stmt-bellissima-deck-15-class"
+  ],
+  "evidence": [
+    {
+      "field": "deck",
+      "statement_id": "stmt-bellissima-deck-15-class",
+      "artifact_id": "art-bellissima-ga-2019",
+      "document_class": "General Arrangement Plan",
+      "publisher": "Chantiers de l'Atlantique",
+      "locator": "Deck 15 plan view — residential zone classification",
+      "note": "Deck 15 confirmed as residential. Cabin 15666 existence on deck 15 derived from numbering convention — not individually verified from plan."
+    }
+  ]
+}

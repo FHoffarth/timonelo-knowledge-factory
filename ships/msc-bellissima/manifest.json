@@ -1,0 +1,32 @@
+{
+  "vessel_slug": "msc-bellissima",
+  "imo": "IMO 9766205",
+  "name": "MSC Bellissima",
+  "operator": "MSC Cruises",
+  "ship_class": "Meraviglia",
+  "shipyard": "Chantiers de l'Atlantique, Saint-Nazaire",
+  "yard_number": "K34",
+  "build_year": 2019,
+  "delivery_date": "2019-03-02",
+  "flag_state": "Panama",
+  "length_m": 315.8,
+  "beam_m": 43.0,
+  "gross_tonnage": 171598,
+  "total_passenger_decks": 19,
+  "cabin_count": 2217,
+  "passenger_capacity_double": 5686,
+  "evidence": {
+    "vessel_facts": {
+      "artifact_id": "art-bellissima-ga-2019",
+      "source_type": "OFFICIAL_SHIPYARD",
+      "publisher": "Chantiers de l'Atlantique",
+      "document_class": "General Arrangement Plan",
+      "locator": "Cover sheet — vessel specification block"
+    },
+    "imo_registry": {
+      "source_url": "https://gisis.imo.org/Public/MSD/Default.aspx",
+      "source_type": "MARITIME_REGISTRY",
+      "note": "IMO GISIS public vessel record"
+    }
+  }
+}
