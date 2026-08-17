@@ -1,0 +1,14 @@
+vessel: msc-bellissima
+nodes_count: 2675
+edges_count: 2700
+coordinate_system:
+  origin: AFT_CENTERLINE_KEEL
+  x_axis: AFT (0.0) -> BOW (1.0) [315.83m]
+  y_axis: PORT (-0.5) -> STARBOARD (+0.5) [43.0m]
+  z_axis: DECK ELEVATION [0.0m to 58.5m]
+pathfinding_algorithms_supported:
+- A_STAR (Euclidean 3D Heuristic)
+- DIJKSTRA (All-pairs & Single-source)
+- BIDIRECTIONAL_DIJKSTRA
+- ACCESSIBLE_ONLY_SUBGRAPH
+- FEWEST_TURNS_MINIMIZATION

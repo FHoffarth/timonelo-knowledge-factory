@@ -1,0 +1,78 @@
+bars:
+- name: Infinity Bar
+  deck: 5
+  deck_name: Opera
+  category: ATRIUM_LOUNGE_BAR
+  capacity: 90
+  x: 0.48
+  y: 0.0
+- name: Masters of the Sea British Pub
+  deck: 6
+  deck_name: Musica
+  category: PUB_BREWERY
+  capacity: 140
+  x: 0.42
+  y: 0.2
+- name: Jean-Philippe Maury Chocolat & Cafe
+  deck: 6
+  deck_name: Musica
+  category: CAFE_CHOCOLATIER
+  capacity: 85
+  x: 0.45
+  y: -0.2
+- name: TV Studio & Comedy Bar
+  deck: 6
+  deck_name: Musica
+  category: ENTERTAINMENT_BAR
+  capacity: 101
+  x: 0.62
+  y: 0.0
+- name: Casino Imperiale Bar
+  deck: 7
+  deck_name: Fantasia
+  category: GAMING_BAR
+  capacity: 60
+  x: 0.4
+  y: 0.0
+- name: Champagne Bar & Grand Staircase
+  deck: 7
+  deck_name: Fantasia
+  category: CHAMPAGNE_RAW_BAR
+  capacity: 110
+  x: 0.48
+  y: 0.0
+- name: Carousel Lounge Bar
+  deck: 7
+  deck_name: Fantasia
+  category: SHOW_LOUNGE_BAR
+  capacity: 150
+  x: 0.08
+  y: 0.0
+- name: Atmosphere Bar North & South
+  deck: 15
+  deck_name: Preziosa
+  category: POOL_BAR
+  capacity: 200
+  x: 0.58
+  y: 0.25
+- name: MSC Yacht Club Top Sail Lounge (Deck 15)
+  deck: 15
+  deck_name: Preziosa
+  category: EXCLUSIVE_PANORAMIC_LOUNGE
+  capacity: 140
+  x: 0.82
+  y: 0.0
+- name: Horizon Amphitheatre & Sunset Bar
+  deck: 18
+  deck_name: Divina
+  category: AFT_PANORAMIC_SUNSET_BAR
+  capacity: 320
+  x: 0.08
+  y: 0.0
+- name: MSC Yacht Club Top Sail Lounge (Deck 18)
+  deck: 18
+  deck_name: Divina
+  category: EXCLUSIVE_OBSERVATION_LOUNGE
+  capacity: 110
+  x: 0.8
+  y: 0.0

@@ -1,6 +1,6 @@
 # ==============================================================================
-# MSC Bellissima - Decks Register
-# Every deck with verified name, cabin allocations, and venues
+# MSC Bellissima - Decks Register (Canonical 11.2025 Layout)
+# Source: MSC-BEL-ART-001 (Official MSC Bellissima Deck Plan Stand 11.2025)
 # ==============================================================================
 
 decks:
@@ -10,7 +10,7 @@ decks:
     is_passenger_accessible: false
     cabins: 0
     venues: []
-    evidence: "art-bellissima-ga-2019 (GA Profile Sheet 1 - Lower Hull Machinery)"
+    evidence: "MSC-BEL-ART-001"
 
   - deck_number: 2
     deck_name: "Technical Deck 2"
@@ -18,7 +18,7 @@ decks:
     is_passenger_accessible: false
     cabins: 0
     venues: []
-    evidence: "art-bellissima-ga-2019 (GA Profile Sheet 1 - Auxiliary Machinery)"
+    evidence: "MSC-BEL-ART-001"
 
   - deck_number: 3
     deck_name: "Technical Deck 3"
@@ -26,23 +26,22 @@ decks:
     is_passenger_accessible: false
     cabins: 0
     venues: []
-    evidence: "art-bellissima-ga-2019 (GA Profile Sheet 1 - Crew Service Spaces)"
+    evidence: "MSC-BEL-ART-001"
 
   - deck_number: 4
-    deck_name: "Technical Deck 4"
+    deck_name: "Lirica"
     elevation_m: 7.5
     is_passenger_accessible: false
     cabins: 0
     venues: []
-    evidence: "art-bellissima-ga-2019 (GA Profile Sheet 1 - Crew Accommodations)"
+    evidence: "MSC-BEL-ART-001 (Deck 4 Lirica - Crew accommodation and tender boarding)"
 
   - deck_number: 5
-    deck_name: "Corallo"
+    deck_name: "Opera"
     elevation_m: 10.5
     is_passenger_accessible: true
-    zone: "PROMENADE / RECEPTION"
-    cabins: 12
-    cabin_range: "5002-5014 (Forward Oceanview)"
+    zone: "PROMENADE_RECEPTION"
+    cabins: 114
     venues:
       - "Infinity Reception & Guest Services"
       - "Infinity Atrium & Swarovski Stairs (Deck 5)"
@@ -50,13 +49,13 @@ decks:
       - "Medical Centre"
       - "MSC Shore Excursions Desk"
       - "Business Centre & Conference Rooms"
-    evidence: "art-bellissima-ga-2019 (Deck 5 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 3 - Deck 5 Opera)"
 
   - deck_number: 6
-    deck_name: "Posidonia"
+    deck_name: "Musica"
     elevation_m: 14.0
     is_passenger_accessible: true
-    zone: "PROMENADE / PUBLIC ATRIUM"
+    zone: "PROMENADE_ATRIUM"
     cabins: 0
     venues:
       - "Galleria Bellissima (80m LED Dome Promenade)"
@@ -68,13 +67,13 @@ decks:
       - "Emergency Muster Station A (Forward)"
       - "Emergency Muster Station B (Promenade)"
       - "Emergency Muster Station C (Aft)"
-    evidence: "art-bellissima-ga-2019 (Deck 6 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 3 - Deck 6 Musica)"
 
   - deck_number: 7
-    deck_name: "Mirabilis"
+    deck_name: "Fantasia"
     elevation_m: 17.5
     is_passenger_accessible: true
-    zone: "PROMENADE / SPECIALTY DINING"
+    zone: "PROMENADE_DINING"
     cabins: 0
     venues:
       - "Carousel Lounge (Aft Show Theatre)"
@@ -87,139 +86,128 @@ decks:
       - "Emergency Muster Station D (Forward Port)"
       - "Emergency Muster Station E (Mid Port)"
       - "Emergency Muster Station F (Aft Port)"
-    evidence: "art-bellissima-ga-2019 (Deck 7 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 3 - Deck 7 Fantasia)"
 
   - deck_number: 8
-    deck_name: "Camellia"
+    deck_name: "Meraviglia"
     elevation_m: 21.0
     is_passenger_accessible: true
     zone: "RESIDENTIAL_LOWER"
-    cabins: 312
-    cabin_range: "8002-8314"
+    cabins: 236
     venues:
       - "Exterior Promenade Deck & Lifeboat Stations"
-    evidence: "art-bellissima-ga-2019 (Deck 8 General Arrangement Plan & Frame 120-180)"
+    evidence: "MSC-BEL-ART-001 (Page 3 - Deck 8 Meraviglia)"
 
   - deck_number: 9
-    deck_name: "Magnolia"
+    deck_name: "Seaside"
     elevation_m: 24.5
     is_passenger_accessible: true
     zone: "RESIDENTIAL_LOWER"
-    cabins: 348
-    cabin_range: "9002-9350"
+    cabins: 282
     venues: []
-    evidence: "art-bellissima-ga-2019 (Deck 9 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 4 - Deck 9 Seaside)"
 
   - deck_number: 10
-    deck_name: "Mirto"
+    deck_name: "Seaside Evo"
     elevation_m: 28.0
     is_passenger_accessible: true
     zone: "RESIDENTIAL_LOWER"
-    cabins: 356
-    cabin_range: "10002-10358"
+    cabins: 316
     venues: []
-    evidence: "art-bellissima-ga-2019 (Deck 10 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 4 - Deck 10 Seaside Evo)"
 
   - deck_number: 11
-    deck_name: "Ortensia"
+    deck_name: "Bellissima"
     elevation_m: 31.5
     is_passenger_accessible: true
     zone: "RESIDENTIAL_LOWER"
-    cabins: 356
-    cabin_range: "11002-11358"
+    cabins: 334
     venues: []
-    evidence: "art-bellissima-ga-2019 (Deck 11 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 4 - Deck 11 Bellissima)"
 
   - deck_number: 12
-    deck_name: "Rosa"
+    deck_name: "Grandiosa"
     elevation_m: 35.0
     is_passenger_accessible: true
     zone: "RESIDENTIAL_UPPER"
-    cabins: 352
-    cabin_range: "12002-12354"
+    cabins: 312
     venues: []
-    evidence: "art-bellissima-ga-2019 (Deck 12 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 4 - Deck 12 Grandiosa)"
 
   - deck_number: 13
-    deck_name: "Ciclamino"
+    deck_name: "Magnifica"
     elevation_m: 38.5
     is_passenger_accessible: true
     zone: "RESIDENTIAL_UPPER"
-    cabins: 348
-    cabin_range: "13002-13350"
+    cabins: 308
     venues: []
-    evidence: "art-bellissima-ga-2019 (Deck 13 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 4 - Deck 13 Magnifica)"
 
   - deck_number: 14
-    deck_name: "Girasole"
+    deck_name: "World Class"
     elevation_m: 42.0
     is_passenger_accessible: true
     zone: "RESIDENTIAL_UPPER"
-    cabins: 318
-    cabin_range: "14002-14320"
+    cabins: 243
     venues: []
-    evidence: "art-bellissima-ga-2019 (Deck 14 General Arrangement Plan & Frame 140)"
+    evidence: "MSC-BEL-ART-001 (Page 5 - Deck 14 World Class)"
 
   - deck_number: 15
-    deck_name: "Rododendro"
+    deck_name: "Preziosa"
     elevation_m: 45.5
     is_passenger_accessible: true
-    zone: "LIDO_SPORTS / YACHT_CLUB"
-    cabins: 30
-    cabin_range: "15001-15032 (Forward MSC Yacht Club Suites Enclave)"
+    zone: "LIDO_SPORTS_YC"
+    cabins: 32
     venues:
       - "Marketplace Buffet (Forward & Mid)"
       - "Grand Canyon Covered Pool (Solarium)"
       - "Atmosphere Pool & Main Sun Deck"
       - "MSC Yacht Club Top Sail Lounge (Deck 15)"
-    evidence: "art-bellissima-ga-2019 (Deck 15 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 5 - Deck 15 Preziosa)"
 
   - deck_number: 16
-    deck_name: "Orchidea"
+    deck_name: "Seaview"
     elevation_m: 49.0
     is_passenger_accessible: true
-    zone: "LIDO_SPORTS / YACHT_CLUB"
-    cabins: 36
-    cabin_range: "16001-16038 (Forward MSC Yacht Club Suites Enclave)"
+    zone: "LIDO_SPORTS_YC"
+    cabins: 22
     venues:
       - "Marketplace Buffet (Aft Terrace & Pizzeria)"
       - "MSC Gym by Technogym"
       - "Sportplex Arena & F1 Simulator"
       - "MSC Aurea Spa & Thermal Suite"
       - "MSC Yacht Club Restaurant"
-    evidence: "art-bellissima-ga-2019 (Deck 16 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 5 - Deck 16 Seaview)"
 
   - deck_number: 17
     deck_name: "UNKNOWN"
     elevation_m: null
     is_passenger_accessible: false
-    zone: "OMITTED"
+    zone: "OMITTED_BY_TRADITION"
     cabins: 0
     venues: []
-    evidence: "art-bellissima-ga-2019 (Deck 17 omitted in standard Italian maritime numbering tradition)"
+    evidence: "MSC-BEL-ART-001 (Deck 17 omitted in standard Italian maritime numbering tradition)"
 
   - deck_number: 18
-    deck_name: "Ninfea"
+    deck_name: "Divina"
     elevation_m: 55.0
     is_passenger_accessible: true
-    zone: "LIDO_SPORTS / YACHT_CLUB"
-    cabins: 30
-    cabin_range: "18001-18032 (Forward MSC Yacht Club Suites Enclave)"
+    zone: "LIDO_SPORTS_YC"
+    cabins: 18
     venues:
       - "Horizon Amphitheatre & Sunset Bar"
       - "DOREMI Studio & Junior Club (LEGO / Chicco)"
       - "Arizona Aquapark & Himalayan Bridge (82m above sea)"
       - "MSC Yacht Club Top Sail Lounge (Deck 18)"
-    evidence: "art-bellissima-ga-2019 (Deck 18 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 5 - Deck 18 Divina)"
 
   - deck_number: 19
-    deck_name: "Magnolia"
+    deck_name: "Splendida"
     elevation_m: 58.5
     is_passenger_accessible: true
-    zone: "LIDO_SPORTS / YACHT_CLUB"
-    cabins: 10
-    cabin_range: "19001-19012 (Yacht Club Royal Suites & Cabanas)"
+    zone: "LIDO_SPORTS_YC"
+    cabins: 0
     venues:
       - "Top Deck Solarium & The One Pool"
       - "The One Grill & Bar (Yacht Club Exclusive)"
-    evidence: "art-bellissima-ga-2019 (Deck 19 General Arrangement Plan)"
+    evidence: "MSC-BEL-ART-001 (Page 5 - Deck 19 Splendida)"

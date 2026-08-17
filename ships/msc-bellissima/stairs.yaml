@@ -1,0 +1,28 @@
+stairs:
+- id: STAIRS_AFT
+  name: Aft Primary Stairwell
+  start_deck: 5
+  end_deck: 18
+  x: 0.23
+  y: 0.05
+  width_m: 1.8
+  accessible: false
+  evidence: MSC-BEL-ART-001 (Aft Stair Core)
+- id: STAIRS_MID_SWAROVSKI
+  name: Midship Swarovski Grand Atrium Staircase & Central Stairwell
+  start_deck: 5
+  end_deck: 19
+  x: 0.48
+  y: 0.05
+  width_m: 2.4
+  accessible: false
+  evidence: MSC-BEL-ART-001 (Midship Atrium Stair Core)
+- id: STAIRS_FWD
+  name: Forward Primary Stairwell
+  start_deck: 4
+  end_deck: 19
+  x: 0.73
+  y: 0.05
+  width_m: 1.8
+  accessible: false
+  evidence: MSC-BEL-ART-001 (Forward Stair Core)

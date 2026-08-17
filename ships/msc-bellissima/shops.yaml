@@ -1,0 +1,31 @@
+shops:
+- name: Galleria Bellissima Boutiques & Luxury Plaza
+  deck: 6
+  deck_name: Musica
+  category: LUXURY_DUTY_FREE
+  x: 0.52
+  y: 0.15
+- name: MSC Logo Shop & Souvenirs
+  deck: 6
+  deck_name: Musica
+  category: RETAIL_SOUVENIR
+  x: 0.56
+  y: -0.15
+- name: Fine Watches & Jewellery Boutique
+  deck: 6
+  deck_name: Musica
+  category: LUXURY_JEWELLERY
+  x: 0.48
+  y: 0.18
+- name: Jean-Philippe Maury Sweet Boutique
+  deck: 6
+  deck_name: Musica
+  category: CONFECTIONERY
+  x: 0.45
+  y: -0.2
+- name: The Hub Photo Gallery & Emotion Store
+  deck: 6
+  deck_name: Musica
+  category: PHOTO_SERVICES
+  x: 0.65
+  y: -0.15

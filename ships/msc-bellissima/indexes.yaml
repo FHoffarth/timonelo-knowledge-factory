@@ -1,155 +1,55 @@
 # ==============================================================================
 # MSC Bellissima - Spatial & Knowledge Indexes
 # Fast lookup index for cabins, decks, venues, and negative risk facts
+# Source: MSC-BEL-ART-001 (Official MSC Bellissima Deck Plan Stand 11.2025)
 # ==============================================================================
 
 cabin_index:
   "14122":
     status: "EXISTS_VERIFIED"
     deck: 14
-    deck_name: "Girasole"
-    category: "Balcony Deluxe (BR2)"
-    balcony: true
-    accessible: false
-    evidence: "art-bellissima-ga-2019"
-    locator: "Deck 14 residential plan - Frame 140 Starboard Aft Corridor"
+    deck_name: "World Class"
+    category: "IR2 (Deluxe Interior)"
+    balcony: false
+    accessible: true
+    evidence: "MSC-BEL-ART-001"
+    locator: "pdf_bbox [82.856, 500.604, 90.651, 506.021] (Page 5)"
 
   "15666":
-    status: "INVALID_NUMBER_DOES_NOT_EXIST"
+    status: "NOT_LISTED_IN_CANONICAL_DECKPLAN"
     deck: 15
-    deck_name: "Rododendro"
+    deck_name: "Preziosa"
     category: "UNKNOWN"
     balcony: "UNKNOWN"
     accessible: "UNKNOWN"
-    evidence: "art-bellissima-ga-2019"
-    locator: "Deck 15 plan view - Forward enclave 15001-15032 only; aft zone is Marketplace Buffet"
-    reason: "Deck 15 residential inventory contains 30 Yacht Club suites only. No stateroom 15666 exists."
+    evidence: "MSC-BEL-ART-001"
+    locator: "Page 5 - Deck 15 contains only 32 staterooms (Preziosa Deck). Cabin 15666 is not listed."
+    reason: "Cabin 15666 is not in the canonical MSC Bellissima 11.2025 deck plan inventory."
 
   "20215":
-    status: "NON_EXISTENT_DECK"
+    status: "NOT_LISTED_IN_CANONICAL_DECKPLAN"
     deck: "UNKNOWN"
     deck_name: "UNKNOWN"
     category: "UNKNOWN"
     balcony: "UNKNOWN"
     accessible: "UNKNOWN"
-    evidence: "art-bellissima-ga-2019"
-    locator: "Vessel elevation profile - Highest passenger deck is Deck 19 (Magnolia)"
+    evidence: "MSC-BEL-ART-001"
+    locator: "Elevation Profile Sheet - Highest passenger deck is Deck 19 (Splendida)"
     reason: "Deck 20 does not exist on MSC Bellissima (maximum 19 decks)."
 
-  "11002":
-    status: "EXISTS_VERIFIED"
-    deck: 11
-    deck_name: "Ortensia"
-    category: "Balcony Deluxe (BR1)"
-    balcony: true
-    accessible: false
-    evidence: "art-bellissima-ga-2019"
-    locator: "Deck 11 forward residential corridor port side (Frame 210)"
-
-  "8110":
-    status: "EXISTS_VERIFIED"
-    deck: 8
-    deck_name: "Camellia"
-    category: "Balcony with Partial View (BP)"
-    balcony: true
-    accessible: false
-    evidence: "art-bellissima-ga-2019"
-    locator: "Deck 8 Starboard - Lifeboat #8 davit arm obstruction at rail level"
-
-  "5006":
-    status: "EXISTS_VERIFIED"
-    deck: 5
-    deck_name: "Corallo"
-    category: "Oceanview Accessible (OR1_ACC)"
-    balcony: false
-    accessible: true
-    evidence: "art-bellissima-ga-2019"
-    locator: "Deck 5 Forward Accessible Stateroom Cluster"
-
-  "15002":
-    status: "EXISTS_VERIFIED"
-    deck: 15
-    deck_name: "Rododendro"
-    category: "MSC Yacht Club Deluxe Suite (YC1)"
-    balcony: true
-    accessible: false
-    evidence: "art-bellissima-ga-2019"
-    locator: "Deck 15 Forward Yacht Club Enclave"
-
-  "19001":
-    status: "EXISTS_VERIFIED"
-    deck: 19
-    deck_name: "Magnolia"
-    category: "MSC Yacht Club Royal Suite (YC3)"
-    balcony: true
-    accessible: false
-    evidence: "art-bellissima-ga-2019"
-    locator: "Deck 19 Forward Port Corner Suite with private whirlpool"
-
 deck_index:
-  5: { name: "Corallo", cabins: 12, venues: 6, zone: "PROMENADE / RECEPTION" }
-  6: { name: "Posidonia", cabins: 0, venues: 9, zone: "PROMENADE / PUBLIC ATRIUM" }
-  7: { name: "Mirabilis", cabins: 0, venues: 10, zone: "PROMENADE / SPECIALTY DINING" }
-  8: { name: "Camellia", cabins: 312, venues: 1, zone: "RESIDENTIAL_LOWER" }
-  9: { name: "Magnolia", cabins: 348, venues: 0, zone: "RESIDENTIAL_LOWER" }
-  10: { name: "Mirto", cabins: 356, venues: 0, zone: "RESIDENTIAL_LOWER" }
-  11: { name: "Ortensia", cabins: 356, venues: 0, zone: "RESIDENTIAL_LOWER" }
-  12: { name: "Rosa", cabins: 352, venues: 0, zone: "RESIDENTIAL_UPPER" }
-  13: { name: "Ciclamino", cabins: 348, venues: 0, zone: "RESIDENTIAL_UPPER" }
-  14: { name: "Girasole", cabins: 318, venues: 0, zone: "RESIDENTIAL_UPPER" }
-  15: { name: "Rododendro", cabins: 30, venues: 4, zone: "LIDO_SPORTS / YACHT_CLUB" }
-  16: { name: "Orchidea", cabins: 36, venues: 5, zone: "LIDO_SPORTS / YACHT_CLUB" }
+  5: { name: "Opera", cabins: 114, venues: 6, zone: "PROMENADE_RECEPTION" }
+  6: { name: "Musica", cabins: 0, venues: 9, zone: "PROMENADE_ATRIUM" }
+  7: { name: "Fantasia", cabins: 0, venues: 10, zone: "PROMENADE_DINING" }
+  8: { name: "Meraviglia", cabins: 236, venues: 1, zone: "RESIDENTIAL_LOWER" }
+  9: { name: "Seaside", cabins: 282, venues: 0, zone: "RESIDENTIAL_LOWER" }
+  10: { name: "Seaside Evo", cabins: 316, venues: 0, zone: "RESIDENTIAL_LOWER" }
+  11: { name: "Bellissima", cabins: 334, venues: 0, zone: "RESIDENTIAL_LOWER" }
+  12: { name: "Grandiosa", cabins: 312, venues: 0, zone: "RESIDENTIAL_UPPER" }
+  13: { name: "Magnifica", cabins: 308, venues: 0, zone: "RESIDENTIAL_UPPER" }
+  14: { name: "World Class", cabins: 243, venues: 0, zone: "RESIDENTIAL_UPPER" }
+  15: { name: "Preziosa", cabins: 32, venues: 4, zone: "LIDO_SPORTS_YC" }
+  16: { name: "Seaview", cabins: 22, venues: 5, zone: "LIDO_SPORTS_YC" }
   17: { name: "UNKNOWN (OMITTED)", cabins: 0, venues: 0, zone: "OMITTED_BY_TRADITION" }
-  18: { name: "Ninfea", cabins: 30, venues: 4, zone: "LIDO_SPORTS / YACHT_CLUB" }
-  19: { name: "Magnolia", cabins: 10, venues: 2, zone: "LIDO_SPORTS / YACHT_CLUB" }
-
-venue_category_index:
-  PROMENADE_ATRIUM:
-    - "Infinity Reception & Guest Services"
-    - "Infinity Atrium & Swarovski Stairs (Deck 5)"
-    - "MSC Shore Excursions Desk"
-    - "Galleria Bellissima (80m LED Dome Promenade)"
-  DINING:
-    - "Il Ciliegio & Le Cerisier Restaurant"
-    - "Butcher's Cut Steakhouse"
-    - "Kaito Teppanyaki & Sushi Bar"
-    - "HOLA! Tapas Bar by Ramon Freixa"
-    - "MSC Yacht Club Restaurant"
-    - "The One Grill & Bar (Yacht Club Exclusive)"
-  BUFFET:
-    - "Marketplace Buffet (Forward & Mid)"
-    - "Marketplace Buffet (Aft Terrace & Pizzeria)"
-  BAR_LOUNGE:
-    - "Infinity Bar"
-    - "Masters of the Sea British Pub"
-    - "Jean-Philippe Maury Chocolat & Cafe"
-    - "TV Studio & Comedy Bar"
-    - "Casino Imperiale"
-    - "Champagne Bar & Grand Staircase"
-    - "MSC Yacht Club Top Sail Lounge (Deck 15)"
-    - "Horizon Amphitheatre & Sunset Bar"
-    - "MSC Yacht Club Top Sail Lounge (Deck 18)"
-  THEATER:
-    - "London Theatre (Lower Level)"
-    - "Carousel Lounge (Aft Show Theatre)"
-    - "London Theatre (Balcony Level)"
-  POOL_SOLARIUM:
-    - "Grand Canyon Covered Pool (Solarium)"
-    - "Atmosphere Pool & Main Sun Deck"
-    - "Arizona Aquapark & Himalayan Bridge (82m above sea)"
-    - "Top Deck Solarium & The One Pool"
-  SPA_FITNESS:
-    - "MSC Gym by Technogym"
-    - "Sportplex Arena & F1 Simulator"
-    - "MSC Aurea Spa & Thermal Suite"
-  YOUTH_KIDS:
-    - "DOREMI Studio & Junior Club (LEGO / Chicco)"
-  SERVICE_PANTRY:
-    - "Medical Centre"
-    - "Business Centre & Conference Rooms"
-    - "Emergency Muster Station A (Forward)"
-    - "Emergency Muster Station B (Promenade)"
-    - "Emergency Muster Station C (Aft)"
-    - "Emergency Muster Station D (Forward Port)"
-    - "Emergency Muster Station E (Mid Port)"
-    - "Emergency Muster Station F (Aft Port)"
+  18: { name: "Divina", cabins: 18, venues: 4, zone: "LIDO_SPORTS_YC" }
+  19: { name: "Splendida", cabins: 0, venues: 2, zone: "LIDO_SPORTS_YC" }

@@ -1,0 +1,29 @@
+pools:
+- name: Grand Canyon Covered Pool (Solarium)
+  deck: 15
+  deck_name: Preziosa
+  category: COVERED_MAGRODOME_POOL
+  capacity: 220
+  x: 0.42
+  y: 0.0
+- name: Atmosphere Pool & Main Sun Deck
+  deck: 15
+  deck_name: Preziosa
+  category: OUTDOOR_MAIN_POOL
+  capacity: 850
+  x: 0.58
+  y: 0.0
+- name: Arizona Aquapark & Himalayan Bridge (82m above sea)
+  deck: 18
+  deck_name: Divina
+  category: WATERSLIDES_FUN_PARK
+  capacity: 350
+  x: 0.4
+  y: 0.0
+- name: Top Deck Solarium & The One Pool
+  deck: 19
+  deck_name: Splendida
+  category: YACHT_CLUB_EXCLUSIVE_POOL
+  capacity: 140
+  x: 0.7
+  y: 0.0

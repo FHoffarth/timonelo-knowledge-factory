@@ -1,0 +1,57 @@
+restaurants:
+- name: Il Ciliegio & Le Cerisier Restaurant
+  deck: 6
+  deck_name: Musica
+  category: MAIN_DINING
+  capacity: 650
+  x: 0.15
+  y: 0.0
+- name: Butcher's Cut Steakhouse
+  deck: 7
+  deck_name: Fantasia
+  category: SPECIALTY_STEAKHOUSE
+  capacity: 120
+  x: 0.6
+  y: 0.2
+- name: Kaito Teppanyaki & Sushi Bar
+  deck: 7
+  deck_name: Fantasia
+  category: SPECIALTY_ASIAN
+  capacity: 90
+  x: 0.6
+  y: -0.2
+- name: HOLA! Tapas Bar by Ramon Freixa
+  deck: 7
+  deck_name: Fantasia
+  category: SPECIALTY_SPANISH
+  capacity: 64
+  x: 0.65
+  y: 0.2
+- name: Marketplace Buffet (Forward & Mid)
+  deck: 15
+  deck_name: Preziosa
+  category: BUFFET
+  capacity: 1345
+  x: 0.22
+  y: 0.0
+- name: Marketplace Buffet (Aft Terrace & Pizzeria)
+  deck: 16
+  deck_name: Seaview
+  category: BUFFET_PIZZERIA
+  capacity: 350
+  x: 0.12
+  y: 0.0
+- name: MSC Yacht Club Restaurant
+  deck: 16
+  deck_name: Seaview
+  category: EXCLUSIVE_YACHT_CLUB
+  capacity: 120
+  x: 0.85
+  y: 0.0
+- name: The One Grill & Bar (Yacht Club Exclusive)
+  deck: 19
+  deck_name: Splendida
+  category: OUTDOOR_GRILL
+  capacity: 80
+  x: 0.78
+  y: 0.15

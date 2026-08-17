@@ -1,0 +1,87 @@
+elevators:
+- id: ELEV_AFT_BANK
+  name: Aft Elevator Bank (6 Panoramic/Express Lifts)
+  served_decks:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 18
+  x: 0.25
+  y: 0.0
+  capacity_persons: 18
+  speed_mps: 2.5
+  accessible: true
+  vertical_core_id: CORE_AFT
+  evidence: MSC-BEL-ART-001 (Aft Lift Core Frame 65-75)
+- id: ELEV_MID_PANORAMIC
+  name: Midship Panoramic Central Elevators (4 Glass Lifts)
+  served_decks:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 18
+  - 19
+  x: 0.5
+  y: 0.0
+  capacity_persons: 20
+  speed_mps: 2.0
+  accessible: true
+  vertical_core_id: CORE_MID
+  evidence: MSC-BEL-ART-001 (Midship Atrium Lift Core Frame 120-135)
+- id: ELEV_FWD_BANK
+  name: Forward Elevator Bank (6 Express Lifts)
+  served_decks:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 18
+  - 19
+  x: 0.75
+  y: 0.0
+  capacity_persons: 18
+  speed_mps: 2.5
+  accessible: true
+  vertical_core_id: CORE_FWD
+  evidence: MSC-BEL-ART-001 (Forward Lift Core Frame 190-200)
+- id: ELEV_YC_PRIVATE
+  name: MSC Yacht Club Private Concierge Elevator
+  served_decks:
+  - 15
+  - 16
+  - 18
+  - 19
+  x: 0.82
+  y: 0.15
+  capacity_persons: 12
+  speed_mps: 2.0
+  accessible: true
+  vertical_core_id: CORE_YC
+  evidence: MSC-BEL-ART-001 (Yacht Club Forward Private Lift)

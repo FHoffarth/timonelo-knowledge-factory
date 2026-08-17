@@ -1,0 +1,10 @@
+vessel: msc-bellissima
+average_walking_speed_mps: 1.2
+elevator_average_wait_sec: 45
+deck_transition_penalty_sec: 15
+navigation_layers:
+- CABIN_TO_ELEVATOR
+- ELEVATOR_VERTICAL_TRANSIT
+- PROMENADE_WAYFINDING
+- STEP_FREE_ACCESSIBLE_ROUTING
+- EMERGENCY_EVACUATION_MUSTER

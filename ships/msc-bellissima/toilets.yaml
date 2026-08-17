@@ -1,0 +1,181 @@
+toilets:
+- id: WC_D05_FWD_ACC
+  deck: 5
+  deck_name: Opera
+  name: Forward Medical Lobby Restrooms
+  x: 0.32
+  y: 0.1
+  gender: UNISEX_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: Medical Centre
+- id: WC_D05_MID_M
+  deck: 5
+  deck_name: Opera
+  name: Reception Atrium Restroom (Men)
+  x: 0.51
+  y: -0.15
+  gender: MEN
+  accessible: false
+  family: false
+  nearest_venue: Infinity Reception & Guest Services
+- id: WC_D05_MID_W
+  deck: 5
+  deck_name: Opera
+  name: Reception Atrium Restroom (Women)
+  x: 0.51
+  y: 0.15
+  gender: WOMEN
+  accessible: true
+  family: true
+  nearest_venue: Infinity Reception & Guest Services
+- id: WC_D06_FWD_ACC
+  deck: 6
+  deck_name: Musica
+  name: London Theatre Restrooms (Accessible)
+  x: 0.78
+  y: -0.2
+  gender: UNISEX_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: London Theatre (Lower Level)
+- id: WC_D06_MID_M
+  deck: 6
+  deck_name: Musica
+  name: Galleria Bellissima Restroom (Men)
+  x: 0.49
+  y: -0.22
+  gender: MEN
+  accessible: false
+  family: false
+  nearest_venue: Masters of the Sea British Pub
+- id: WC_D06_MID_W
+  deck: 6
+  deck_name: Musica
+  name: Galleria Bellissima Restroom (Women)
+  x: 0.49
+  y: 0.22
+  gender: WOMEN
+  accessible: true
+  family: true
+  nearest_venue: Jean-Philippe Maury Chocolat & Cafe
+- id: WC_D06_AFT_ACC
+  deck: 6
+  deck_name: Musica
+  name: Il Ciliegio Restrooms
+  x: 0.22
+  y: 0.15
+  gender: ALL_GENDER_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: Il Ciliegio & Le Cerisier Restaurant
+- id: WC_D07_FWD_ACC
+  deck: 7
+  deck_name: Fantasia
+  name: Theatre Balcony Restrooms
+  x: 0.78
+  y: 0.18
+  gender: UNISEX_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: London Theatre (Balcony Level)
+- id: WC_D07_MID_ACC
+  deck: 7
+  deck_name: Fantasia
+  name: Casino Imperiale Restrooms
+  x: 0.44
+  y: -0.25
+  gender: ALL_GENDER_ACCESSIBLE
+  accessible: true
+  family: false
+  nearest_venue: Casino Imperiale
+- id: WC_D07_AFT_ACC
+  deck: 7
+  deck_name: Fantasia
+  name: Carousel Lounge Entrance Restrooms
+  x: 0.12
+  y: -0.15
+  gender: ALL_GENDER_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: Carousel Lounge (Aft Show Theatre)
+- id: WC_D15_FWD_YC
+  deck: 15
+  deck_name: Preziosa
+  name: Top Sail Lounge Restroom (Yacht Club)
+  x: 0.8
+  y: 0.12
+  gender: UNISEX_ACCESSIBLE
+  accessible: true
+  family: false
+  nearest_venue: MSC Yacht Club Top Sail Lounge (Deck 15)
+- id: WC_D15_MID_POOL
+  deck: 15
+  deck_name: Preziosa
+  name: Atmosphere Pool Restrooms
+  x: 0.52
+  y: -0.2
+  gender: ALL_GENDER_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: Atmosphere Pool & Main Sun Deck
+- id: WC_D15_AFT_BUFFET
+  deck: 15
+  deck_name: Preziosa
+  name: Marketplace Buffet Forward Restrooms
+  x: 0.29
+  y: 0.18
+  gender: ALL_GENDER_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: Marketplace Buffet (Forward & Mid)
+- id: WC_D16_AFT_TERRACE
+  deck: 16
+  deck_name: Seaview
+  name: Buffet Terrace & Gym Restrooms
+  x: 0.18
+  y: -0.15
+  gender: ALL_GENDER_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: MSC Gym by Technogym
+- id: WC_D16_FWD_SPA
+  deck: 16
+  deck_name: Seaview
+  name: MSC Aurea Spa Changing Restrooms
+  x: 0.74
+  y: 0.2
+  gender: UNISEX_ACCESSIBLE
+  accessible: true
+  family: false
+  nearest_venue: MSC Aurea Spa & Thermal Suite
+- id: WC_D18_AQUAPARK
+  deck: 18
+  deck_name: Divina
+  name: Arizona Aquapark Restrooms & Showers
+  x: 0.38
+  y: 0.2
+  gender: ALL_GENDER_ACCESSIBLE
+  accessible: true
+  family: true
+  nearest_venue: Arizona Aquapark & Himalayan Bridge (82m above sea)
+- id: WC_D18_DOREMI
+  deck: 18
+  deck_name: Divina
+  name: DOREMI Kids Club Dedicated Restrooms
+  x: 0.22
+  y: -0.15
+  gender: FAMILY_CHILDREN
+  accessible: true
+  family: true
+  nearest_venue: DOREMI Studio & Junior Club (LEGO / Chicco)
+- id: WC_D19_SUNDECK_YC
+  deck: 19
+  deck_name: Splendida
+  name: The One Sun Deck Restrooms (Yacht Club)
+  x: 0.76
+  y: -0.15
+  gender: UNISEX_ACCESSIBLE
+  accessible: true
+  family: false
+  nearest_venue: Top Deck Solarium & The One Pool

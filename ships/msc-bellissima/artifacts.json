@@ -1,0 +1,58 @@
+[
+  {
+    "candidate_id": "MSC-BEL-ART-001",
+    "title": "MSC BELLISSIMA DECKPLÄNE, Stand 11.2025",
+    "publisher": "MSC Cruises",
+    "document_class": "Official Deck Plan",
+    "authority": "Primary",
+    "access": "Public",
+    "source_url": "https://www.msccruises.at/content/dam/msc-cruises/b2c-assets/b2c-countries/de/deckpl%C3%A4ne/MSC_BELLISSIMA_DECKPLAN_GER.pdf",
+    "sha256": "085d363b2ea6b4d1187fefa3125c861b104d33ec1c062732659a5ed8d2e2f5c0",
+    "confidence_score": 1.0,
+    "scope": "2,217 Staterooms, Categories, H-marked accessible cabins, Connecting doors, Decks 4-19"
+  },
+  {
+    "candidate_id": "MSC-BEL-ART-002",
+    "title": "MSC Bellissima: Deckplan & Reiserouten",
+    "publisher": "MSC Cruises Deutschland",
+    "document_class": "Official Ship Web Page",
+    "authority": "Primary",
+    "access": "Public",
+    "source_url": "https://www.msccruises.de/kreuzfahrtschiffe/msc-bellissima",
+    "confidence_score": 1.0,
+    "scope": "Ship identity, highlights, restaurant & bar overview"
+  },
+  {
+    "candidate_id": "MSC-BEL-ART-003",
+    "title": "MSC Bellissima Kabinen und Suiten",
+    "publisher": "MSC Cruises Deutschland",
+    "document_class": "Official Cabin Category Catalogue",
+    "authority": "Primary",
+    "access": "Public",
+    "source_url": "https://www.msccruises.de/kreuzfahrtschiffe/msc-bellissima/kabinen-suiten",
+    "confidence_score": 1.0,
+    "scope": "Category descriptions, size ranges, balcony status by category"
+  },
+  {
+    "candidate_id": "MSC-BEL-ART-005",
+    "title": "Meraviglia/Bellissima/Grandiosa/Virtuosa Product Sheet",
+    "publisher": "Chantiers de l'Atlantique",
+    "document_class": "Shipyard Product Sheet",
+    "authority": "Primary",
+    "access": "Public",
+    "source_url": "https://chantiers-atlantique.com/wp-content/uploads/2021/03/Fiche-produit-E34-F34-G34-H34_relu.pdf",
+    "confidence_score": 0.98,
+    "scope": "Yard provenance, dimensions (315.83m x 43.0m), 2,217 staterooms configuration"
+  },
+  {
+    "candidate_id": "MSC-BEL-ART-008",
+    "title": "Ship and Company Particulars (IMO 9760524 / 9766205)",
+    "publisher": "IMO GISIS",
+    "document_class": "International Ship Registry Record",
+    "authority": "Primary",
+    "access": "Public portal",
+    "source_url": "https://gisis.imo.org/Public/SHIPS/Default.aspx",
+    "confidence_score": 1.0,
+    "scope": "IMO registry, flag state Malta, gross tonnage 171,598 GT"
+  }
+]

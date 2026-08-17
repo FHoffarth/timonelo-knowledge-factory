@@ -1,0 +1,70 @@
+zones:
+- id: ZONE_PROMENADE_GALLERIA
+  name: Galleria Bellissima & Central Atrium
+  decks:
+  - 5
+  - 6
+  - 7
+  type: PUBLIC_SANCTUARY
+  is_lively: true
+- id: ZONE_THEATER_FORWARD
+  name: London Theatre Forward Complex
+  decks:
+  - 5
+  - 6
+  - 7
+  type: ENTERTAINMENT
+  is_lively: true
+- id: ZONE_RESIDENTIAL_LOWER
+  name: Lower Residential Stateroom Tier
+  decks:
+  - 8
+  - 9
+  - 10
+  - 11
+  type: STATEROOMS
+  is_lively: false
+- id: ZONE_RESIDENTIAL_UPPER
+  name: Upper Residential Stateroom Tier
+  decks:
+  - 12
+  - 13
+  - 14
+  type: STATEROOMS
+  is_lively: false
+- id: ZONE_LIDO_DECKS
+  name: Atmosphere Pool & Grand Canyon Solarium
+  decks:
+  - 15
+  - 16
+  type: POOL_SOLARIUM
+  is_lively: true
+- id: ZONE_AFT_DINING_BUFFET
+  name: Marketplace Buffet & Aft Terrace
+  decks:
+  - 15
+  - 16
+  type: BUFFET_DINING
+  is_lively: true
+- id: ZONE_YACHT_CLUB_ENCLAVE
+  name: MSC Yacht Club Private Enclave
+  decks:
+  - 15
+  - 16
+  - 18
+  - 19
+  type: EXCLUSIVE_SANCTUARY
+  is_lively: false
+- id: ZONE_AQUAPARK_YOUTH
+  name: Arizona Aquapark & DOREMI Kids Clubs
+  decks:
+  - 18
+  - 19
+  type: FAMILY_YOUTH
+  is_lively: true
+- id: ZONE_CAROUSEL_AFT
+  name: Carousel Lounge & Aft Promenade
+  decks:
+  - 7
+  type: SHOW_LOUNGE
+  is_lively: true

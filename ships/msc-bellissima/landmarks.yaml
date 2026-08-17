@@ -1,0 +1,37 @@
+landmarks:
+- id: LM_LED_DOME
+  name: 80-Meter LED Sky Dome
+  deck: 6
+  x: 0.5
+  y: 0.0
+  visibility_range_m: 80.0
+- id: LM_SWAROVSKI_STAIRS
+  name: Swarovski Crystal Staircase
+  deck: 5
+  x: 0.48
+  y: 0.0
+  visibility_range_m: 35.0
+- id: LM_LONDON_THEATRE
+  name: London Theatre Entrance
+  deck: 6
+  x: 0.85
+  y: 0.0
+  visibility_range_m: 40.0
+- id: LM_CAROUSEL_LOUNGE
+  name: Carousel Lounge Sea-View Rotunda
+  deck: 7
+  x: 0.08
+  y: 0.0
+  visibility_range_m: 50.0
+- id: LM_ATMOSPHERE_SCREEN
+  name: Atmosphere Giant Poolside LED Screen
+  deck: 15
+  x: 0.6
+  y: 0.0
+  visibility_range_m: 65.0
+- id: LM_HIMALAYAN_BRIDGE
+  name: Himalayan Suspension Bridge
+  deck: 18
+  x: 0.4
+  y: 0.0
+  visibility_range_m: 70.0

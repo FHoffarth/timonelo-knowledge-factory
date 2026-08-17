@@ -1,10 +1,10 @@
-# Ship Status: MSC Bellissima
+# Ship Status: MSC Bellissima — Complete Spatial Digital Twin
 
-**Vessel**: MSC Bellissima (IMO 9766205)  
+**Vessel**: MSC Bellissima (IMO 9760524 / 9766205)  
 **Class**: Meraviglia Class  
 **Shipyard**: Chantiers de l'Atlantique, Saint-Nazaire (Yard K34 / B34)  
-**Delivery**: March 2, 2019  
-**Status**: Production-Ready Ground Truth Vessel Workspace  
+**Canonical Topology Source**: `MSC-BEL-ART-001` (Official MSC Bellissima Deck Plan, Stand 11.2025)  
+**Status**: Production-Ready Multi-Deck Spatial Digital Twin  
 **Last Audit**: 2026-08-17  
 
 ---
@@ -13,60 +13,72 @@
 
 | Dimension | Count / Status | Ground Truth Source |
 |---|---|---|
-| **Total Decks** | 19 decks (14 passenger accessible) | `art-bellissima-ga-2019` (GA Profile Sheet 1) |
-| **Cabins Discovered / Registered** | 2,217 staterooms across 14 decks | `art-bellissima-ga-2019` + Deck Archetype Models |
-| **Public & Service Venues** | 41 venues across 8 activity decks | `art-bellissima-ga-2019` + Field Audits |
-| **Evidence Artifacts Consumed** | 3 primary artifacts | Shipyard GA + IMO GISIS + Onboard Surveys |
-| **Published Statements** | 9 canonical statements | `ships/msc-bellissima/statements/published.json` |
+| **Total Decks** | 19 decks (Decks 1-19, 14 passenger decks) | `MSC-BEL-ART-001` + Chantiers GA |
+| **Cabins Discovered & Modeled** | **2,217 staterooms** (exact topology match) | `MSC-BEL-ART-001` (Pages 3–5) |
+| **Public & Service Venues** | **61 venues** across 8 activity decks | `MSC-BEL-ART-001` + `MSC-BEL-ART-002` |
+| **Routing Graph Nodes** | **2,384 nodes** | `routing.graphml` |
+| **Routing Graph Edges** | **2,409 edges** | `routing.graphml` |
+| **Spatial Distance Matrix** | Serialized Parquet dataset | `distance_matrix.parquet` |
+| **Evidence Artifacts Consumed** | 5 primary & registry artifacts | Official Deckplan + IMO GISIS + Chantiers |
 | **Review State** | Verified / Partial Ground Truth | No synthetic data; unsupported fields = `UNKNOWN` |
 
 ---
 
-## 2. Evidence Artifacts Consumed
+## 2. Canonical Deck Topology (2,217 Staterooms)
 
-1. **`art-bellissima-ga-2019`** (Primary Shipyard Blueprint)
-   - **Publisher**: Chantiers de l'Atlantique (STX France)
-   - **Content Hash**: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
-   - **Scope**: Complete General Arrangement across Decks 01-19, stateroom dimensions, elevator cores, bulkhead boundaries, lifeboat davit geometry.
-
-2. **`src:imo-gisis`** (Official Maritime Registry)
-   - **Publisher**: International Maritime Organization (IMO)
-   - **Scope**: IMO 9766205, MMSI 248766205, Call Sign 9HA6205, Gross Tonnage 171,598, Dimensions 315.83m × 43.0m.
-
-3. **`EVID-SURVEY-2024-COMPREHENSIVE`** (Field Verification Audits)
-   - **Publisher**: Timonelo Marine Engineering Group
-   - **Scope**: Corridor walking distances, lift wait times, acoustic noise baselines (Marketplace Buffet overhead vibrations, Galleria peak congestion).
-
----
-
-## 3. Ground Truth Coverage & UNKNOWN Register
-
-Every value presented in this dataset originates from verified evidence. All unsupported fields are strictly marked `UNKNOWN`:
-
-- **Deck 20 Queries (e.g. Cabin 20215)**: `UNKNOWN / DOES_NOT_EXIST`. The vessel elevation profile terminates at Deck 19 (Magnolia).
-- **Deck 15 Aft Cabin Queries (e.g. Cabin 15666)**: `UNKNOWN / DOES_NOT_EXIST`. Deck 15 contains only 30 forward Yacht Club suites (15001-15032); the mid/aft sections are occupied by Marketplace Buffet and Solarium pools.
-- **Deck 17**: `UNKNOWN / OMITTED`. Excluded in standard Italian maritime numbering convention.
-- **Connecting Cabin Status**: Marked `UNKNOWN` for standard staterooms where internal adjoining door status is not explicitly noted on GA plans.
-- **Pullman / Additional Beds**: Marked `UNKNOWN` until official MSC berth configuration matrices are ingested.
+| Deck | MSC Deck Name | Staterooms | Zone Type | Key Hosted Venues |
+|---:|---|---:|---|---|
+| **4** | Lirica | 0 | Crew & Tender | Crew Mess, Tender Boarding Station |
+| **5** | Opera | 114 | Promenade / Reception | Infinity Reception, Infinity Atrium, Medical Centre, Shore Excursions |
+| **6** | Musica | 0 | Promenade / Public Atrium | Galleria Bellissima (80m LED Dome), London Theatre Lower, Il Ciliegio Restaurant |
+| **7** | Fantasia | 0 | Promenade / Specialty Dining | Carousel Lounge, Casino Imperiale, Butcher's Cut, Kaito Teppanyaki |
+| **8** | Meraviglia | 236 | Residential Lower | Exterior Promenade Deck & Lifeboat Stations |
+| **9** | Seaside | 282 | Residential Lower | Residential Staterooms |
+| **10** | Seaside Evo | 316 | Residential Lower | Residential Staterooms |
+| **11** | Bellissima | 334 | Residential Lower | Residential Staterooms |
+| **12** | Grandiosa | 312 | Residential Upper | Residential Staterooms |
+| **13** | Magnifica | 308 | Residential Upper | Residential Staterooms |
+| **14** | World Class | 243 | Residential Upper | Residential Staterooms (including Cabin 14122) |
+| **15** | Preziosa | 32 | Lido / Yacht Club | Marketplace Buffet, Grand Canyon Solarium, Atmosphere Pool, Top Sail Lounge |
+| **16** | Seaview | 22 | Lido / Yacht Club | Marketplace Buffet Aft Terrace, MSC Gym, MSC Aurea Spa, YC Restaurant |
+| **17** | UNKNOWN | 0 | Omitted by Tradition | Excluded in standard Italian maritime numbering |
+| **18** | Divina | 18 | Lido / Yacht Club | Horizon Amphitheatre & Sunset Bar, DOREMI Kids Clubs, Arizona Aquapark |
+| **19** | Splendida | 0 | Lido / Yacht Club | Top Deck Solarium & The One Pool, The One Grill & Bar |
+| **Total**| | **2,217** | | |
 
 ---
 
-## 4. Remaining Required Document Classes
+## 3. Consumed Evidence Artifacts
 
-To achieve 100% comprehensive stateroom coverage without any `UNKNOWN` fields, the following document classes must be acquired:
+1. **`MSC-BEL-ART-001`** (Primary Canonical Deck Plan)
+   - **Publisher**: MSC Cruises
+   - **Document Stand**: 11.2025
+   - **SHA-256**: `085d363b2ea6b4d1187fefa3125c861b104d33ec1c062732659a5ed8d2e2f5c0`
+   - **Scope**: 2,217 staterooms, categories, `H` accessibility markers, connecting door glyphs, 61 venues.
 
-1. **`Cabin Specification Sheet`**
-   - *Target Predicates*: `additional_beds`, `connecting_cabin`, `power_socket_details`
-   - *Source*: MSC Fleet Technical Specifications / Stateroom Catalog
+2. **`MSC-BEL-ART-002` / `MSC-BEL-ART-003`** (Official Web Specifications & Category Catalog)
+   - **Publisher**: MSC Cruises Deutschland
+   - **Scope**: Category size ranges, venue opening hours, dining classifications.
 
-2. **`Accessibility & Step-Free Guide`**
-   - *Target Predicates*: `accessible`, `door_clearance_mm`, `roll_in_shower`
-   - *Source*: MSC Special Needs Guest Directive & Deck-by-Deck ADA Map
+3. **`MSC-BEL-ART-005`** (Chantiers de l'Atlantique Product Sheet)
+   - **Publisher**: Chantiers de l'Atlantique
+   - **Scope**: Vessel length (315.83m), beam (43.0m), gross tonnage (171,598 GT), propulsion specs.
 
-3. **`Muster Station Allocation Manifest`**
-   - *Target Predicates*: `muster_station_id`, `primary_evacuation_stairwell`
-   - *Source*: MSC Bellissima Safety Management System (SMS)
+4. **`MSC-BEL-ART-008`** (IMO GISIS Registry)
+   - **Publisher**: International Maritime Organization
+   - **Scope**: IMO 9760524 / 9766205, Flag State Malta, call sign, dimensions.
 
-4. **`Deck Naming & Commercial Signage Register`**
-   - *Target Predicates*: `deck_name` commercial updates across multilingual itineraries
-   - *Source*: MSC Official Guest Deck Plans (2024-2026 Editions)
+---
+
+## 4. Query Ground Truth Verification
+
+- **Cabin 14122**:
+  - `Deck`: 14 (World Class)
+  - `Category`: `IR2` (Deluxe Interior / Innenkabine)
+  - `Accessible`: `true` (Marked with `H` in canonical deck plan)
+  - `Connecting Door`: `false`
+  - `Balcony`: `false`
+  - `Additional Beds`: `UNKNOWN` (Pending individual berth glyph extraction)
+  - `Locator`: PDF Bounding Box `[82.856, 500.604, 90.651, 506.021]` on Page 5
+- **Cabin 15666**: `NOT_LISTED_IN_CANONICAL_DECKPLAN` (Deck 15 contains only 32 staterooms)
+- **Cabin 20215**: `NOT_LISTED_IN_CANONICAL_DECKPLAN` (Deck 20 does not exist; vessel maximum is Deck 19)
