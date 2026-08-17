@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "IngestedArtifact",
+  "description": "A registered artifact produced by the Truth Engine Connector Bridge. Trust evaluation is exclusively performed by the Truth Engine, not by the connector.",
   "type": "object",
   "required": [
     "artifact_id",
@@ -37,7 +38,8 @@
     },
     "provenance": {
       "type": "object",
-      "required": ["source_type", "authority", "trust_level"],
+      "description": "Immutable passthrough of source provenance from the ArtifactCandidate. Trust evaluation is NOT performed here.",
+      "required": ["source_type"],
       "properties": {
         "source_type": {
           "type": "string",
@@ -49,31 +51,16 @@
             "MARITIME_REGISTRY"
           ]
         },
-        "authority": { "type": "string" },
-        "trust_level": {
+        "authoritative_publisher": {
           "type": "string",
-          "enum": ["OFFICIAL", "VERIFIED", "COMMUNITY"]
+          "description": "Preserved verbatim from ArtifactCandidate.extracted_metadata.authoritative_publisher. Never synthesized."
         }
-      }
+      },
+      "additionalProperties": false
     },
     "ingested_at": {
       "type": "string",
       "format": "date-time"
-    },
-    "parsed_sections": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["section_name", "page_number"],
-        "properties": {
-          "section_name": { "type": "string" },
-          "page_number": { "type": "integer", "minimum": 1 },
-          "extracted_entities": {
-            "type": "array",
-            "items": { "type": "string" }
-          }
-        }
-      }
     }
   },
   "additionalProperties": false
