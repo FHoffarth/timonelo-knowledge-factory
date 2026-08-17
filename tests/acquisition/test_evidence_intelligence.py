@@ -76,6 +76,14 @@ class TestKnowledgeFactorySchemas(unittest.TestCase):
             fpath = os.path.join(agent_dir, fname)
             self.assertTrue(os.path.exists(fpath), f"Missing {fname} in AGENT-002")
 
+    def test_agent_003_directory_completeness(self):
+        """Verify AGENT-003 has all required specification files."""
+        agent_dir = os.path.join(AGENTS_DIR, "AGENT-003-coverage-planner")
+        expected_files = ["README.md", "SYSTEM_PROMPT.md", "OUTPUT_SCHEMA.json", "TESTS.md", "CHANGELOG.md"]
+        for fname in expected_files:
+            fpath = os.path.join(agent_dir, fname)
+            self.assertTrue(os.path.exists(fpath), f"Missing {fname} in AGENT-003")
+
 
 if __name__ == "__main__":
     unittest.main()

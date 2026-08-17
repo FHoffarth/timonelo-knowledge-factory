@@ -26,6 +26,8 @@ REQUIRED_SCHEMAS = [
     "artifact-candidate.schema.json",
     "artifact.schema.json",
     "statement.schema.json",
+    "coverage-plan-request.schema.json",
+    "evidence-acquisition-plan.schema.json",
 ]
 
 

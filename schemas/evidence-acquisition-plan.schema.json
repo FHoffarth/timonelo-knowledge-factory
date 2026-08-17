@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EvidenceAcquisitionPlan",
+  "description": "Output contract for AGENT-003 Coverage Planner. A ranked acquisition backlog ready for AGENT-001 to consume. Contains no truth evaluation, no trust assignment, no statement creation.",
+  "type": "object",
+  "required": [
+    "entity_slug",
+    "computed_at",
+    "coverage",
+    "recommended_next_document",
+    "roadmap"
+  ],
+  "properties": {
+    "entity_slug": {
+      "type": "string"
+    },
+    "computed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp of plan computation."
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["answered", "unknown", "coverage_percent"],
+      "properties": {
+        "answered":          { "type": "integer", "minimum": 0 },
+        "unknown":           { "type": "integer", "minimum": 0 },
+        "coverage_percent":  { "type": "number",  "minimum": 0.0, "maximum": 100.0 }
+      },
+      "additionalProperties": false
+    },
+    "recommended_next_document": {
+      "type": "object",
+      "description": "The single highest-priority document class to acquire next.",
+      "required": ["document_class", "expected_new_statements", "expected_unknown_reduction_percent"],
+      "properties": {
+        "document_class":                    { "type": "string" },
+        "expected_new_statements":           { "type": "integer", "minimum": 0 },
+        "expected_unknown_reduction_percent":{ "type": "number",  "minimum": 0.0, "maximum": 100.0 }
+      },
+      "additionalProperties": false
+    },
+    "roadmap": {
+      "type": "array",
+      "description": "Ranked list of document classes ordered by expected knowledge gain descending.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["priority", "document_class", "expected_new_statements", "expected_unknown_reduction_percent"],
+        "properties": {
+          "priority":                          { "type": "integer", "minimum": 1 },
+          "document_class":                    { "type": "string" },
+          "expected_new_statements":           { "type": "integer", "minimum": 0 },
+          "expected_unknown_reduction_percent":{ "type": "number",  "minimum": 0.0, "maximum": 100.0 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

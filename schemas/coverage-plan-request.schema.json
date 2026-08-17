@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CoveragePlanRequest",
+  "description": "Input contract for AGENT-003 Coverage Planner. Contains the current state of the knowledge graph: registered artifacts, statement inventory, unknown register, and authority matrix.",
+  "type": "object",
+  "required": [
+    "entity_slug",
+    "statement_inventory",
+    "unknown_register",
+    "authority_matrix"
+  ],
+  "properties": {
+    "entity_slug": {
+      "type": "string",
+      "description": "The slug of the entity being planned for (e.g. 'msc-bellissima')."
+    },
+    "registered_artifact_ids": {
+      "type": "array",
+      "description": "Artifact IDs already ingested. Used to avoid recommending re-acquisition.",
+      "items": { "type": "string", "pattern": "^art-[a-z0-9-]+$" },
+      "default": []
+    },
+    "statement_inventory": {
+      "type": "object",
+      "description": "Counts of known vs unknown statements.",
+      "required": ["answered", "unknown"],
+      "properties": {
+        "answered": { "type": "integer", "minimum": 0 },
+        "unknown":  { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "unknown_register": {
+      "type": "array",
+      "description": "Every statement that is currently unresolved. Each entry identifies the predicate and subject.",
+      "items": {
+        "type": "object",
+        "required": ["predicate", "subject_slug"],
+        "properties": {
+          "predicate":    { "type": "string" },
+          "subject_slug": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "authority_matrix": {
+      "type": "array",
+      "description": "Mapping of document classes to the predicates they are capable of establishing.",
+      "items": {
+        "type": "object",
+        "required": ["document_class", "addressable_predicates"],
+        "properties": {
+          "document_class": { "type": "string" },
+          "addressable_predicates": {
+            "type": "array",
+            "items": { "type": "string" },
+            "minItems": 1
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}
