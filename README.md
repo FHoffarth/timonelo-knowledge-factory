@@ -1,7 +1,16 @@
 # Timonelo Knowledge Factory
 
-> Autonomous evidence ingestion, artifact registration, and graph compilation pipeline  
-> for naval architecture and cruise intelligence.
+> **Evidence before intelligence.**
+
+A provenance-first pipeline for ingesting, registering and compiling maritime
+knowledge for Timonelo.
+
+**Artifacts are observations. Publication requires evidence and governance.**
+
+`Source → Artifact → Statement → Review → Knowledge`
+
+The Knowledge Factory exists to preserve where information came from,
+how it was transformed, and whether it is admissible as canonical knowledge.
 
 ---
 
@@ -60,7 +69,7 @@ Truth Engine                    ← separate system
 
 ## Core Guarantees
 
-1. **Zero hallucination**: No string is invented. Missing fields are omitted, not fabricated.
+1. **Fail-closed provenance**: Missing provenance fields are omitted rather than fabricated. Trust evaluation remains outside the connector.
 2. **Boundary law**: The connector performs only deterministic transformations. Trust evaluation belongs exclusively to the Truth Engine (see [ADR-0001](docs/adr/0001-connector-does-not-evaluate-trust.md)).
 3. **Immutability**: `ArtifactCandidate` and `RegisteredArtifact` are independently addressable. The candidate is never mutated.
 
@@ -101,4 +110,4 @@ Current version: **1.0.0** — see [CHANGELOG.md](CHANGELOG.md).
 
 ---
 
-*© 2026 Timonelo Naval Architecture & Systems Group — MIT License*
+*© 2026 Florian Hoffarth — MIT License*
